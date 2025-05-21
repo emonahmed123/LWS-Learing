@@ -1,26 +1,29 @@
 import "./App.css";
+import MousePointer from "./component/MousePointer";
 
-function Button({ onClick, children }) {
-  return <button onClick={onClick}>{children}</button>;
-}
+// function Button({ onClick, children }) {
+//   return <button onClick={onClick}>{children}</button>;
+// }
 
-function PlayButton({ movieName }) {
-  function handlePlayClick() {
-    alert(`Playing ${movieName}!`);
-  }
+// function PlayButton({ movieName }) {
+//   function handlePlayClick() {
+//     alert(`Playing ${movieName}!`);
+//   }
 
-  return <Button onClick={handlePlayClick}>Play "{movieName}"</Button>;
-}
+//   return <Button onClick={handlePlayClick}>Play "{movieName}"</Button>;
+// }
 
-function UploadButton() {
-  return <Button onClick={() => alert("Uploading!")}>Upload Image</Button>;
-}
+// function UploadButton() {
+//   return <Button onClick={() => alert("Uploading!")}>Upload Image</Button>;
+// }
 
 export default function Toolbar() {
   return (
     <div>
-      <PlayButton movieName="Kiki's Delivery Service" />
-      <UploadButton />
+      {/* <PlayButton movieName="Kiki's Delivery Service" />
+      <UploadButton /> */}
+
+      <MousePointer />
     </div>
   );
 }
