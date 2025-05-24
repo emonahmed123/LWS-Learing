@@ -1,20 +1,18 @@
-import { useState } from "react";
-
+import { useReducer } from "react";
 import "./App.css";
 import AddTask from "./Componentes/AddTask";
 import TaskList from "./Componentes/TaskList";
-
+import taskReducer from "./Reducers/taskReducer";
 import { initialTasks } from "./data/task";
-
 /*   
 1.Learn Reducer how to work and  how to  comabained to useSate to userRecuder 
-
+2.Learn how to use dispatch what is dispatch and learn swtich case useses
 
 
 */
 
 export default function App() {
-  const [tasks, setTask] = useState(initialTasks);
+  const [tasks, dispatch] = useReducer(taskReducer, initialTasks);
 
   //handle
 
@@ -27,31 +25,25 @@ export default function App() {
   };
 
   const handleAddTask = (text) => {
-    setTask([
-      ...tasks,
-      {
-        id: getNextId(tasks),
-
-        text: text,
-        done: false,
-      },
-    ]);
+    dispatch({
+      type: "added",
+      text,
+      id: getNextId(tasks),
+    });
   };
 
   const handleChangeTask = (task) => {
-    const nextTasks = tasks.map((t) => {
-      if (t.id === task.id) {
-        return task;
-      } else {
-        return t;
-      }
+    dispatch({
+      type: "changed",
+      task,
     });
-
-    setTask(nextTasks);
   };
 
   const handleDeleTask = (taskId) => {
-    setTask(tasks.filter((t) => t.id !== taskId));
+    dispatch({
+      type: "deleted",
+      id: taskId,
+    });
   };
 
   return (
