@@ -1,26 +1,18 @@
 import "./App.css";
-import From from "./component/From";
+import AddTask from "./Componentes/AddTask";
 
-// function Button({ onClick, children }) {
-//   return <button onClick={onClick}>{children}</button>;
-// }
+/*   
+1.Learn Reducer how to work and  how to  comabained to useSate to userRecuder 
 
-// function PlayButton({ movieName }) {
-//   function handlePlayClick() {
-//     alert(`Playing ${movieName}!`);
-//   }
 
-//   return <Button onClick={handlePlayClick}>Play "{movieName}"</Button>;
-// }
 
-// function UploadButton() {
-//   return <Button onClick={() => alert("Uploading!")}>Upload Image</Button>;
-// }
+*/
 
-export default function Toolbar() {
+export default function App() {
   return (
-    <div>
-      <From />
-    </div>
+    <>
+      <h1>Prague itinerary</h1>
+      <AddTask />
+    </>
   );
 }
