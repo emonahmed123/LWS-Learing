@@ -1,5 +1,5 @@
 import "./App.css";
-import MousePointer from "./component/MousePointer";
+import From from "./component/From";
 
 // function Button({ onClick, children }) {
 //   return <button onClick={onClick}>{children}</button>;
@@ -20,10 +20,7 @@ import MousePointer from "./component/MousePointer";
 export default function Toolbar() {
   return (
     <div>
-      {/* <PlayButton movieName="Kiki's Delivery Service" />
-      <UploadButton /> */}
-
-      <MousePointer />
+      <From />
     </div>
   );
 }
