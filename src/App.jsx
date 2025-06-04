@@ -1,6 +1,11 @@
 import "./App.css";
+import From from "./components/From";
 function App() {
-  return <></>;
+  return (
+    <>
+      <From />
+    </>
+  );
 }
 
 export default App;
