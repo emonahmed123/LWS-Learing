@@ -1,9 +1,11 @@
 import "./App.css";
-import Comment from "./components/Comment";
+import SaveButton from "./components/SaveButton";
+import StatusBar from "./components/StatusBar";
 function App() {
   return (
     <>
-      <Comment />
+      <StatusBar />
+      <SaveButton />
     </>
   );
 }
