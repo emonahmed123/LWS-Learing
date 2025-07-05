@@ -1,11 +1,8 @@
 import "./App.css";
-import SaveButton from "./components/SaveButton";
-import StatusBar from "./components/StatusBar";
 function App() {
   return (
     <>
-      <StatusBar />
-      <SaveButton />
+      <h1>fuck</h1>
     </>
   );
 }
