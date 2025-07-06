@@ -5,6 +5,7 @@ import {
   createContactAction,
   deleteContactAction,
   editContactAction,
+  updateContactFavoriteAction,
 } from "./action/contactAction";
 import Contact from "./Contact";
 import EditContact from "./EditContact";
@@ -30,6 +31,7 @@ const router = createBrowserRouter([
         element: <Contact />,
         errorElement: <ErrorPage />,
         loader: getContactLoaders,
+        action: updateContactFavoriteAction,
       },
       {
         path: "contacts/:id/edit",
