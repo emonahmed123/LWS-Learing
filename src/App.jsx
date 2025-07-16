@@ -1,9 +1,18 @@
 import "./App.css";
-import Simple from "./components/Simple";
+import ScrolleReveal from "./components/ScrolleReveal";
 function App() {
   return (
     <>
-      <Simple />
+      {/* <Simple /> */}
+
+      {/* <ButtonTap /> */}
+      {/* <TextMotion /> */}
+      {/* <TrantionType /> */}
+
+      {/* <Variant/> */}
+
+      {/* <Counter /> */}
+      <ScrolleReveal />
     </>
   );
 }
