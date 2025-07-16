@@ -1,11 +1,9 @@
 import "./App.css";
-import LoginForm from "./forms/LoginForm";
-import RegistrationForm from "./forms/RegistrationForm";
+import Simple from "./components/Simple";
 function App() {
   return (
     <>
-      <LoginForm />
-      <RegistrationForm />
+      <Simple />
     </>
   );
 }
