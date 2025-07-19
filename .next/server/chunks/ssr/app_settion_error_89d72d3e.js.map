@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///C:/Lws-project-all/install-react/app/settion/error.js"],"sourcesContent":["'use client' // Error boundaries must be Client Components\r\n\r\nimport { useEffect } from 'react'\r\n\r\nexport default function Error({ error, reset }) {\r\n    useEffect(() => {\r\n        // Log the error to an error reporting service\r\n        console.error(error)\r\n    }, [error])\r\n\r\n    return (\r\n        <div>\r\n            <h2>Something went wrong!</h2>\r\n            <button className='cursor-pointer'\r\n                onClick={\r\n                    // Attempt to recover by trying to re-render the segment\r\n                    () => reset()\r\n                }\r\n            >\r\n                Try again\r\n            </button>\r\n        </div>\r\n    )\r\n}"],"names":[],"mappings":";;;;AAEA;AAFA,aAAa,6CAA6C;;;;AAI3C,SAAS,MAAM,EAAE,KAAK,EAAE,KAAK,EAAE;IAC1C,CAAA,GAAA,qMAAA,CAAA,YAAS,AAAD,EAAE;QACN,8CAA8C;QAC9C,QAAQ,KAAK,CAAC;IAClB,GAAG;QAAC;KAAM;IAEV,qBACI,8OAAC;;0BACG,8OAAC;0BAAG;;;;;;0BACJ,8OAAC;gBAAO,WAAU;gBACd,SACI,wDAAwD;gBACxD,IAAM;0BAEb;;;;;;;;;;;;AAKb","debugId":null}}]
+}
