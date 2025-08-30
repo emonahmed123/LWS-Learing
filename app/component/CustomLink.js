@@ -6,10 +6,10 @@ const CustomLink = ({ path, children }) => {
 
     const pathname = usePathname()
 
-    // console.log(pathname)
+    console.log(pathname)
 
     const active = path === pathname
-
+    console.log('chek')
     return (
 
 
