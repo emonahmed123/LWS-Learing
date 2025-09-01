@@ -1,5 +1,9 @@
+import { ReadFile } from "./utils/ReadFile";
 
 export default function Home() {
+
+  ReadFile()
+
   return (
     <div>
 
