@@ -11,6 +11,10 @@ const comments = [
         id: 3,
         text: "Comment 3",
     },
+    {
+        id: 4,
+        text: "Comment 3",
+    },
 ];
 
 export default comments;
