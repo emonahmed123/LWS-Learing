@@ -1,13 +1,13 @@
+import getJoke from "./utils/getJoke";
 
 
-export default function Home() {
+export default async function Home() {
 
-
-
+  const joke = await getJoke();
   return (
     <div>
 
-      <h1> This  is home Page</h1>
+      <h1 className="text-xl">{joke.value}</h1>
     </div>
   );
 }
